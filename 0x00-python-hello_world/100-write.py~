@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+import sys
+str = "and that piece of art is useful - Dora Korpar, 2015-10-19"
+def print_to_stderr(*a):
+    file = sys.stderr
+print_to_stderr(str)
