@@ -1,0 +1,3 @@
+#!/usr/bin/python3
+alpha = range(66, 90)
+print(str(alpha))
