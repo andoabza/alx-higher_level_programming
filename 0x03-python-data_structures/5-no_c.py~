@@ -1,0 +1,4 @@
+#!/usr/bin/python3
+def no_c(my_string):
+   x = my_string.index('c')
+   my_string = my_string[:x] + my_string[x + 1: ]
