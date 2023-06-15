@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 def update_dictionary(a_dictionary, key, value):
-    new = list(a_dictionary)
-    if str(key) in new:
-        new.pop(key)
-        new.append(value)
+    new = str(key)
+    if new in a_dictionary:
+        a_dictionary.pop(new)
+        a_dictionary.update({new: value})
+        return a_dictionary
     else:
-        new.append(value)
-    return new
+        a_dictionary.update({new: value})
+        return a_dictionary
 
 
 
