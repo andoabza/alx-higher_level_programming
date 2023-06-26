@@ -2,6 +2,7 @@
 def safe_print_integer(value):
     try:
         if value == int(value):
-            return value
+            print(value)
+            return True
     except:
-        return value
+        return False
