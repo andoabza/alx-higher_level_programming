@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Define clas """
 class Square:
     """ define square class that raise exception if false"""
     def __init__(self, size=0):
