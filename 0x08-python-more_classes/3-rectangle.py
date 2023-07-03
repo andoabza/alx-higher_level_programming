@@ -11,6 +11,8 @@ class Rectangle:
             width to calculate rectangle.
             height for the rectangle
             value: to set and retrive.
+            str to print the str form
+            repr to print object
     """
     def __init__(self, width=0, height=0):
         self.width = width
@@ -38,9 +40,23 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
     def area(self):
-        return self.__width * self.__height
+        area = self.__width * self.__height
+        return area
+
     def perimeter(self):
         if self.__width == 0 or self.__height == 0:
             return 0
         else:
-            return 2 * (self.__width + self.__height)
+            peri = 2 * (self.__width + self.__height)
+            return peri
+    
+    def __str__(self):
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        rectangle_str = ""
+        for _ in range(self.__height):
+            rectangle_str += "#" * self.__width + "\n"
+        return rectangle_str
+
+    def __repr__(self):
+        return f"<3-rectangle.Rectangle object at {hex(id(self))}>"
