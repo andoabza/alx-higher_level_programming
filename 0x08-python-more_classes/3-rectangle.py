@@ -58,5 +58,5 @@ class Rectangle:
             rectangle_str += "#" * self.__width + "\n"
         return rectangle_str
 
-    def __repr__(self):
-        return f"<3-rectangle.Rectangle object at {hex(id(self))}>"
+        def __repr__(self):
+            return "(Rectangle)"
