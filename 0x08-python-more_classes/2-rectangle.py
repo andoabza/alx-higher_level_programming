@@ -4,7 +4,12 @@ class Rectangle:
     """ functions:
             width for the width.
             height for the height.
+            area for the area.
+            perimeter for the perimeter.
+
         Args:
+            width to calculate rectangle.
+            height for the rectangle
             value: to set and retrive.
     """
     def __init__(self, width=0, height=0):
@@ -32,3 +37,33 @@ class Rectangle:
         elif value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+    def area(self):
+        return self.__width * self.__height
+    def perimeter(self):
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        else:
+            return 2 * (self.__width + self.__height)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
