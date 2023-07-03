@@ -58,5 +58,3 @@ class Rectangle:
             rectangle_str += "#" * self.__width + "\n"
         return rectangle_str
 
-        def __repr__(self):
-            return "(Rectangle)"
