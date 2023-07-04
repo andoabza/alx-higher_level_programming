@@ -1,0 +1,20 @@
+    Prints the given first name and last name.
+
+    :param first_name: A string representing the first name.
+    :param last_name: A string representing the last name. Default is an empty string.
+    :raises TypeError: If either first_name or last_name is not a string.
+    :return: None
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("John", "Doe")
+    My name is John Doe
+    >>> say_my_name("Alice")
+    My name is Alice
+    >>> say_my_name(123, "Smith")
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+    >>> say_my_name("Bob", 456)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
+    
