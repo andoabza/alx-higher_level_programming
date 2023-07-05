@@ -29,6 +29,6 @@ class Square:
         if self.size > 0:
             for x in range(0, self.size):
                 print(self.size * '#')
-        else:
+        elif self.size == 0:
              print(' ')
 
