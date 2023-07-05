@@ -1,0 +1,33 @@
+Prints a square of '#' characters with the given size
+    print_square = __import__('4-print_square').print_square
+    >>> print_square(3)
+    ###
+    ###
+    ###
+    
+    >>> print_square(0)
+    
+    >>> print_square(-2)
+    Traceback (most recent call last):
+        ...
+    ValueError: size must be >= 0
+    
+    >>> print_square(3.5)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+    
+    >>> print_square("three")
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+    """
+    if not isinstance(size, int):
+        raise TypeError("size must be an integer")
+    elif size < 0:
+        raise ValueError("size must be >= 0")
+    elif isinstance(size, float) or size < 0:
+        raise TypeError("size must be an integer")
+    for x in range(0, size):
+        print(size * '#')
+
