@@ -1,0 +1,24 @@
+
+    Indents text based on punctuation marks.
+
+    Example:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+    >>> text_indentation("Hello. How are you? I am fine.")
+    Hello.
+    
+    How are you?
+    
+    I am fine.
+    
+    >>> text_indentation("This is a test.\nAnother line: This is the last line.")
+    This is a test.
+    
+    Another line:
+    
+    This is the last line.
+    
+    >>> text_indentation("Invalid input")
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+   
