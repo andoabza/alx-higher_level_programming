@@ -1,0 +1,27 @@
+ Multiplies two matrices using the numpy dot product.
+
+    Args:
+        m_a (ndarray): First matrix.
+        m_b (ndarray): Second matrix.
+
+    Returns:
+        ndarray: Resulting matrix.
+    >>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+    >>> a = np.array([[1, 2], [3, 4]])
+    >>> b = np.array([[5, 6], [7, 8]])
+    >>> lazy_matrix_mul(a, b)
+    array([[19, 22],
+           [43, 50]])
+
+    >>> c = np.array([[1, 2, 3], [4, 5, 6]])
+    >>> d = np.array([[7, 8], [9, 10], [11, 12]])
+    >>> lazy_matrix_mul(c, d)
+    array([[ 58,  64],
+           [139, 154]])
+
+    >>> e = np.array([[1, 2], [3, 4]])
+    >>> f = np.array([[5, 6, 7], [8, 9, 10]])
+    >>> lazy_matrix_mul(e, f)
+    Traceback (most recent call last):
+        ...
+    ValueError: shapes (2,2) and (2,3) not aligned: 2 (dim 1) != 3 (dim 0)
