@@ -3,6 +3,7 @@ def weight_average(my_list=[]):
     if my_list == 0:
         return 0
     else:
-        for g in range(len(rate)):
-        rate[g] = rate[g] * (amount[g] / sum(amount))
-        rate = sum(rate)
+        for g in range(len(my_list)):
+        rate[g] = my_list[g] * (amount[g] / sum(amount))
+        my_list = sum(rate)
+        return my_list
