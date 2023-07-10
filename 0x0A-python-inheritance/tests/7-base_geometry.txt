@@ -1,0 +1,17 @@
+""" a fun that return exception"""
+>>> geom  = __import__('7-base_geometry').BaseGeometry
+>>> geom.area()
+Traceback (most recent call last):
+    ...
+Exception: area() is not implemented
+
+>>> geom.integer_validator("width", 10)
+>>> geom.integer_validator("height", -5)
+Traceback (most recent call last):
+    ...
+ValueError: height must be greater than 0
+
+>>> geom.integer_validator("length", "abc")
+Traceback (most recent call last):
+    ...
+TypeError: length must be an integer
