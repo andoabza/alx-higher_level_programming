@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 def lookup(obj):
     """ look for list of methods lookup(obj) or class."""
-    return list(dir(obj))
+    obj1 = dir(obj)
+    return list(obj1)
