@@ -1,4 +1,4 @@
-#!/usr/bin/pythono3
+#!/usr/bin/python3
 """ define a class that return """
 class BaseGeometry:
     """ area a func that raise exception. """
