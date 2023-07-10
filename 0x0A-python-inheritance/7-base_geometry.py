@@ -6,8 +6,6 @@ class BaseGeometry:
         raise Exception("area() is not implemented")
     """ func that return namme"""
     def integer_validator(self, name, value):
-        self.name = name
-        self.value = value
         if not isinstance(value, int):
             raise TypeError(f"{name} must be an integer")
         elif value <= 0:
