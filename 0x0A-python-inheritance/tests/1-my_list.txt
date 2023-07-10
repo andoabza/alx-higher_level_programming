@@ -1,0 +1,7 @@
+""" my_list s function thatg return sorted copy of items in list. """
+>>> MyList = __import__('1-my_list').MyList
+>>> mylist = [7, 4, 5, 1, 8]
+>>> print(my_list)
+>>> my_list.print_sorted()
+[7, 4, 5, 1, 8]
+[1, 4, 5, 7, 8]
