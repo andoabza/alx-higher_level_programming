@@ -1,0 +1,18 @@
+""" doctesyt for Squarebclass. """
+>>> Square = __import__('10-square').Square
+>>> square = Square(5)
+>>> square.area()
+25
+
+>>> square.integer_validator("size", -5)
+Traceback (most recent call last):
+    ...
+ValueError: size must be greater than 0
+
+>>> square.integer_validator("size", "abc")
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
+
+>>> print(square)
+[Square] 5/5

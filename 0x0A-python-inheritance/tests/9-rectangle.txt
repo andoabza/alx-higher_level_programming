@@ -1,0 +1,18 @@
+""" test fo the class. """
+>>> rect = __import__('9-rectangle').Rectangle
+>>> rect = Rectangle(5, 10)
+>>> rect.area()
+50
+
+>>> rect.integer_validator("width", -5)
+Traceback (most recent call last):
+    ...
+ValueError: width must be greater than 0
+
+>>> rect.integer_validator("height", "abc")
+Traceback (most recent call last):
+    ...
+TypeError: height must be an integer
+
+>>> print(rect)
+[Rectangle] 5/10
