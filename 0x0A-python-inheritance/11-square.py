@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" import a class. """
+""" import a class.to 11-square.py """
 Rectangle = __import__('9-rectangle').Rectangle
 """ define a class. """
 class Square(Rectangle):
