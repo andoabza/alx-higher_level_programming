@@ -9,5 +9,31 @@
 ['a', 'b', 'c']
 
 >>> my_list([])
+""" function that sort element. """
+""" function that sort element. """
+>>> my_list = __import__('1-my_list').MyList
+>>> my_list([3, 1, 2])
+>>> my_list.print_sorted()
+[1, 2, 3]
+
+>>> my_list(["c", "a", "b"])
+>>> my_list.print_sorted()
+['a', 'b', 'c']
+
+>>> my_list([])
+>>> my_list.print_sorted()
+[]
+>>> my_list = __import__('1-my_list').MyList
+>>> my_list([3, 1, 2])
+>>> my_list.print_sorted()
+[1, 2, 3]
+
+>>> my_list(["c", "a", "b"])
+>>> my_list.print_sorted()
+['a', 'b', 'c']
+
+>>> my_list([])
+>>> my_list.print_sorted()
+[]
 >>> my_list.print_sorted()
 []
