@@ -13,6 +13,7 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
+        self.id = id
         super().__init__(id)
     @property
     def width(self):
@@ -61,7 +62,9 @@ class Rectangle(Base):
     def display(self):
         for i in range(0, self.__height):
             print('#' * self.__width)
-
+    """ define __str__ to print out string representation. """
+    def __str__(self):
+        return f"{self.__class__.__name__} ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
 
 
 
