@@ -58,7 +58,14 @@ class Square(Rectangle):
                 elif k == "y":
                     self.y = v
 
-
+    """ dict representation. """
+    def to_dictionary(self):
+        return {
+                'id' : self.id,
+                'x' : self.x,
+                'size' : self.width,
+                'y' : self.y
+                }
 
 
 
