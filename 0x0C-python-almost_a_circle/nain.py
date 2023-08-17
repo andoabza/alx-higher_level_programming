@@ -1,17 +1,12 @@
 #!/usr/bin/python3
-""" 12-main """
+""" 101-main """
+from models.base import Base
 from models.rectangle import Rectangle
+from models.square import Square
 
 if __name__ == "__main__":
 
-    r1 = Rectangle(10, 2, 1, 9)
-    print(r1)
-    r1_dictionary = r1.to_dictionary()
-    print(r1_dictionary)
-    print(type(r1_dictionary))
+    list_rectangles = [Rectangle(100, 40), Rectangle(90, 110, 30, 10), Rectangle(20, 25, 110, 80)]
+    list_squares = [Square(35), Square(15, 70, 50), Square(80, 30, 70)]
 
-    r2 = Rectangle(1, 1)
-    print(r2)
-    r2.update(**r1_dictionary)
-    print(r2)
-    print(r1 == r2)
+    Base.draw(list_rectangles, list_squares)
