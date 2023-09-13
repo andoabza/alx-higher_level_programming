@@ -1,0 +1,18 @@
+#!/usr/bin/node
+const Psquare = require('./5-square.js');
+class Square extends Psquare{
+	charPrint(c) {
+		if (c === undefined){
+			c = 'X';
+		}
+		for (let i = 0; i < this.height; i++){
+			let line = '';
+			for (let j = 0; j < this.width; j++){
+				line += c;
+			}
+		
+		console.log(line.trim());
+}
+}
+}
+module.exports = Square;
