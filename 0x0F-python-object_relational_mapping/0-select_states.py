@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import MySQLdb
 import sys
+""" list all state"""
 if __name__ = "__main__":
 
     db = MySQLdb.connect(user=sql.argv[1], passwd=sys.argv[2],
