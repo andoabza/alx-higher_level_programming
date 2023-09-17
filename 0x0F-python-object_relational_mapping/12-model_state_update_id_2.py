@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" a script that change the name to New Mexico """
 import sys
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
