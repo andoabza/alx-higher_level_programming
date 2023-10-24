@@ -10,7 +10,7 @@ req.get({
   gzip: true
 },
 function (err, resp, body) {
-  if (err) throw(err);
+  if (err) throw (err);
   body = JSON.parse(body);
   console.log(body.title);
 }
