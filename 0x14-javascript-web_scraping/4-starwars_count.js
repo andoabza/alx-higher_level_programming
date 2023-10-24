@@ -1,11 +1,10 @@
 #!/usr/bin/node
 /** a script that return title of movie id person **/
 const req = require('request');
-
 const uri = process.argv[2];
 req.get({
-  uri
-  // gzip: true
+  uri: uri,
+  gzip: true
 },
 function (err, resp, body) {
   if (err) throw (err);
